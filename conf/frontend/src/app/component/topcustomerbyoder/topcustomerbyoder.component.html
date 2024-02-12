@@ -1,0 +1,35 @@
+<!-- Add these lines for the start and end date fields -->
+
+<div class="date-picker-container">
+  <div class="input-group">
+    <label for="numberOfBestCustomers">Number of Best Customers: </label>
+    <input type="number" id="numberOfBestCustomers"
+      [(ngModel)]="numberOfBestCustomers" required />
+  </div>
+
+  <div class="input-group">
+    <label for="startDate">Start Date: </label>
+    <input type="date" id="startDate" [(ngModel)]="startDate" name="startDate"
+      required />
+  </div>
+
+  <div class="input-group">
+    <label for="endDate">End Date: </label>
+    <input type="date" id="endDate" [(ngModel)]="endDate" name="endDate"
+      required />
+  </div>
+  <div *ngIf="formInvalid" class="error-message">Please fill in all the required
+    fields.</div>
+</div>
+
+<button [disabled]="!isValidForm()" (click)="fetchBestCustomers()">Fetch Best
+  Customers</button>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <!-- Bar Chart -->
+      <div [chart]="barChart"></div>
+    </div>
+  </div>
+</div>

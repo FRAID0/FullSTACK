@@ -1,0 +1,72 @@
+/* Global Styles */
+
+  
+  .newuser,
+  .approve {
+    width: 45%; /* Adjust the width as needed */
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  ol {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  .approval-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  
+
+
+.date-picker-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px; 
+}
+
+.input-group {
+  margin-right: 10px;
+}
+
+button {
+  margin-top: 10px;
+}
+
+
+
+.error-message {
+  color: red;
+  margin-top: 5px;
+}

@@ -1,0 +1,27 @@
+
+<div>
+  <h2 class="table-title">The information of our customers</h2>
+  <table class="customer-table">
+    <thead>
+      <tr class="header-row">
+        <th>Customer Key</th>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Phone</th>
+        <th>Account Balance</th>
+        <th>Comment</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let customer of customers; let even = even; let odd = odd"
+        class="customer-row" [ngClass]="{'even-row': even, 'odd-row': odd}">
+        <td>{{ customer.c_custkey }}</td>
+        <td>{{ customer.c_name }}</td>
+        <td>{{ customer.c_address }}</td>
+        <td>{{ customer.c_phone }}</td>
+        <td>{{ customer.c_acctbal }}</td>
+        <td>{{ customer.c_comment }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

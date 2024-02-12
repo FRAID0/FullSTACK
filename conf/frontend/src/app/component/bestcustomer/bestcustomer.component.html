@@ -1,0 +1,13 @@
+<div class="revenue_best">
+    <div class="containerbestcustomer">
+      <form (ngSubmit)="onSubmit()">
+        <label for="numberOfCustomers">Please enter the number of top customers to display:</label>
+        <input type="number" id="numberOfCustomers" name="numberOfCustomers" [(ngModel)]="userInput" (ngModelChange)="onSubmit()" required>
+        <button type="submit">Display the top customers as well</button>
+      </form>
+      <div id="bestCustomersChart"></div>
+    </div>
+  </div>
+
+
+  

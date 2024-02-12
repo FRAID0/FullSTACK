@@ -1,0 +1,60 @@
+
+.customer-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .customer-table th, .customer-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .customer-row {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  
+  
+  
+  .customer-table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+  
+  .table-title {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px; /* Add space below the title */
+    color: #333; /* Text color for the title */
+  }
+  
+  .header-row {
+    background-color: #abacc8; /* Background color for the header row */
+  }
+  
+  .customer-row {
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s; /* Add a color transition */
+  }
+  
+  .even-row {
+    background-color: #f9f9f9; /* Background color for even rows */
+  }
+  
+  .odd-row {
+    background-color: #fff; /* Background color for odd rows */
+  }
+  
+  .customer-table th, .customer-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .customer-table td {
+    max-width: 200px; /* Limit the width of cells to prevent overly extended content */
+  }
+  

@@ -1,0 +1,53 @@
+
+<div id="timeChart" class="timeChart"></div>
+
+<div class="revenue-container"
+  *ngIf="monthlyRevenue || yearlyRevenue || nextYearRevenue || totalRevenue">
+
+  <div class="revenue-circle" *ngIf="totalRevenue">
+    <div class="revenue-label">Total Revenue</div>
+    <div class="revenue-value" [style.background-color]="getCircleColor(3)">
+      {{ totalRevenue | currency:'EUR':'symbol':'1.2-2' }}
+    </div>
+  </div>
+
+  <div class="revenue-circle" *ngIf="monthlyRevenue">
+    <div class="revenue-label">Monthly Revenue</div>
+    <div class="revenue-value" [style.background-color]="getCircleColor(0)">
+      {{ monthlyRevenue | currency:'EUR':'symbol':'1.2-2' }}
+    </div>
+  </div>
+
+  <div class="revenue-circle" *ngIf="yearlyRevenue">
+    <div class="revenue-label">Yearly Revenue</div>
+    <div class="revenue-value" [style.background-color]="getCircleColor(1)">
+      {{ yearlyRevenue | currency:'EUR':'symbol':'1.2-2' }}
+    </div>
+  </div>
+
+  <div class="revenue-circle" *ngIf="nextYearRevenue">
+    <div class="revenue-label">Next Year Revenue</div>
+    <div class="revenue-value" [style.background-color]="getCircleColor(2)">
+      {{ nextYearRevenue | currency:'EUR':'symbol':'1.2-2' }}
+    </div>
+  </div>
+
+  <div id="timeChart" class="timeChart"></div>
+
+</div>
+
+
+<div class="choice_revenue">
+ <div >
+   <label for="monthInput">Choose a month (1-12): </label>
+   <input id="monthInput" type="number" [(ngModel)]="selectedMonth" min="1" max="12" (ngModelChange)="onShowRevenueButtonClick()" />
+   <button (click)="onShowRevenueButtonClick()">Show Revenue</button>
+ </div>
+
+ <div >
+   <label for="yearInput">Choose a year:</label>
+   <input id="yearInput" type="number" [(ngModel)]="selectedYear" min="2022" max="2100" (ngModelChange)="onShowYearlyRevenueButtonClick()"/>
+   <button (click)="onShowYearlyRevenueButtonClick()">Show Yearly Revenue</button>
+ </div>
+
+</div>

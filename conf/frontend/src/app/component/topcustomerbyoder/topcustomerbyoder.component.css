@@ -1,0 +1,41 @@
+
+
+.date-picker-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px; 
+  }
+  
+  .input-group {
+    margin-right: 10px;
+   
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+  
+  
+  
+  .error-message {
+    color: red;
+    margin-top: 5px;
+  }
+
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
